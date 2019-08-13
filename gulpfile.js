@@ -54,12 +54,12 @@ gulp.task('scripts', function () {
 
 gulp.task('css-libs', function () {
     return gulp.src([
-        'app/libs/bootstrap/dist/css/bootstrap.min.css',
         'app/libs/bootstrap/dist/css/bootstrap-reboot.min.css',
+        'app/libs/bootstrap/dist/css/bootstrap.min.css',
         'app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
         'app/libs/owl.carousel/dist/assets/owl.theme.default.min.css',
     ])// Выбираем файл для минификации
-        .pipe(concat('libs.min.js'))
+        .pipe(concat('libs.min.css'))
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(cssnano()) // Сжимаем
         //.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min

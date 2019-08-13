@@ -12,22 +12,38 @@
     <!--stylesheet END-->
 </head>
 <body>
-<article class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3">
-            <p>test</p>
+<header class="header">
+    <nav class="header__wrapper">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-2 header__time header__item">
+                    Пн-Пт с <span class="font_bold">9:00</span> до <span class="font_bold">20:00</span>
+                </div>
+                <div class="col-sm-4 header__adress header__item">
+                    Москва Roomer, <span class="font_bold">работаем по всей Москве</span>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="d-flex header__top-nav justify-content-around header__item">
+                        <li><a href="">Компания</a></li>
+                        <li><a href="">Каталоги</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 header__search-wrapper d-flex header__item align-items-center">
+                    <div class="header__search">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11" stroke="white"/>
+                            <path d="M19.5 19.5L25 25" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="header__help font_bold d-flex align-items-center">
+                        Помощь
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-3">
-            <p>test</p>
-        </div>
-        <div class="col-sm-3">
-            <p>test</p>
-        </div>
-        <div class="col-sm-3">
-            <p>test</p>
-        </div>
-    </div>
-</article>
+    </nav>
+</header>
 <!--scripts-->
 <script src="js/app.js"></script>
 <script src="js/libs.min.js"></script>

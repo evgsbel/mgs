@@ -1,25 +1,30 @@
 @import 'font'
 $grey: #3E3F43
+$yel: #FBA54F
 $f-sm: 14px
 body
   color: $grey
   font-size: 16px
-  font-family: 'MontserratRegular'
+  font-family: 'MontserratRegular', serif
   font-weight: normal
 
 ul
   list-style-type: none
   padding: 0
   margin: 0
+img
+  max-width: 100%
+a:hover
+  text-decoration: none
 
 .black
   color: #000
 
 .font_bold
-  font-family: 'MontserratBold'
+  font-family: 'MontserratBold', serif
 
 .font_medium
-  font-family: 'MontserratMedium'
+  font-family: 'MontserratMedium', serif
 
 .align_center
   text-align: center
@@ -37,10 +42,10 @@ ul
   &__wrapper
     background: $grey
     color: #fff
-
   &__item
     border-right: 1px solid rgba(234, 235, 239, 0.1)
     font-size: 13px
+    height: 50px
 
     span
       font-size: 14px
@@ -49,23 +54,96 @@ ul
     text-align: center
 
   &__top-nav
+    border-right: 0
+
     li
+      position: relative
+
+      &:after
+        content: ''
+        background-color: #B7D445
+        display: block
+        height: 5px
+        width: 0
+        transition: width .3s ease-in-out
+        position: absolute
+        bottom: -15px
+        left: -5px
+
+      &:hover:after, &:focus:after
+        width: 120%
+
       a
         font-size: $f-sm
         line-height: 17px
         color: #fff
 
-  &__search-wrapper
-    border: 0
+        svg
+          display: none
+          position: absolute
+          top: 45%
+          right: -10px
+
+        &:hover svg
+          display: block
+          transition: .3s all
 
   &__help
     background: #F4F5F7
-    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2)
     color: $grey
     font-size: $f-sm
     line-height: 17px
-    margin-left: 15px
-    flex-basis: 75%
     text-align: center
     height: 50px
+.search
+  margin: 50px auto 30px
+  &__item
+    width: 100%
+    border: 1px solid $grey
+    height: 50px
+    padding-left: 30px
+  &__submit
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Ccircle cx='11.5' cy='11.5' r='11' stroke='%233E3F43'%2F%3E %3Cpath d='M19.5 19.5L25 25' stroke='%233E3F43'%2F%3E %3C%2Fsvg%3E")
+    background-color: transparent
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+    top: 20%
+    position: absolute
+    right: 22px
+    border: 0
+    width: 26px
+    height: 26px
+.header-nav
+  margin-top: 30px
+  margin-bottom: 40px
+  &__list-item
+    position: relative
+    &:before, &:last-child:after
+      content: ''
+      height: 28px
+      background: rgba(62, 63, 67, 0.2)
+      width: 1px
+      display: block
+      position: absolute
+      top: 0
+      transition: height, background .5s ease-in-out
+    &:last-child:after
+      right: 0
+
+    a
+      color: $grey
+      line-height: 28px
+      font-size: $f-sm
+      text-transform: uppercase
+      padding: 0 30px
+      transition: text-shadow .5s
+    &:hover a
+      color: $yel
+      text-shadow: 0 0 1px $yel, 0 0 1px $yel
+    &:hover:before
+      height: 58px
+      background: $yel
+
 // header END

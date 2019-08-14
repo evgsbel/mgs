@@ -16,33 +16,61 @@
     <nav class="header__wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-sm-2 header__time header__item">
+                <div class="col-sm-2 d-flex align-items-center justify-content-between header__item header__time">
                     Пн-Пт с <span class="font_bold">9:00</span> до <span class="font_bold">20:00</span>
                 </div>
-                <div class="col-sm-4 header__adress header__item">
+                <div class="col-sm-4 d-flex align-items-center justify-content-around header__item header__adress">
                     Москва Roomer, <span class="font_bold">работаем по всей Москве</span>
                 </div>
-                <div class="col-sm-4">
-                    <ul class="d-flex header__top-nav justify-content-around header__item">
-                        <li><a href="">Компания</a></li>
-                        <li><a href="">Каталоги</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2 header__search-wrapper d-flex header__item align-items-center">
-                    <div class="header__search">
-                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11" stroke="white"/>
-                            <path d="M19.5 19.5L25 25" stroke="white"/>
+                <ul class="col-sm-4 d-flex justify-content-around align-items-center header__item header__top-nav">
+                    <li><a href="">Компания
+                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L3 3L5 1" stroke="white"/>
                         </svg>
-                    </div>
-                    <div class="header__help font_bold d-flex align-items-center">
-                        Помощь
-                    </div>
-                </div>
+                    </a></li>
+                    <li><a href="">Каталоги
+                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L3 3L5 1" stroke="white"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">Контакты
+                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L3 3L5 1" stroke="white"/>
+                        </svg>
+                    </a></li>
+                </ul>
+                <a href="" class="col-sm-2 header__help font_bold d-flex align-items-center justify-content-center">
+                    Помощь
+                </a>
             </div>
         </div>
     </nav>
+    <div class="container-fluid search">
+        <div class="row">
+            <form action="" method="post" class="col-sm-12">
+                <input class="search__item" placeholder="Поиск" type="search">
+                <input type="submit" value="" class="search__submit">
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid header-nav">
+        <div class="row align-items-center">
+            <div class="col-sm-2 header-nav__item header__logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <nav class="col-sm-8 header-nav__items-wrapper">
+                <ul class="d-flex justify-content-around">
+                    <li class="d-flex align-items-center header-nav__list-item"><a href="">Каталог</a></li>
+                    <li class="d-flex align-items-center header-nav__list-item"><a href="">Спальня</a></li>
+                    <li class="d-flex align-items-center header-nav__list-item"><a href="">Гостинная</a></li>
+                    <li class="d-flex align-items-center header-nav__list-item"><a href="">Прихожая</a></li>
+                    <li class="d-flex align-items-center header-nav__list-item"><a href="">Кухни</a></li>
+                    <li class="d-flex align-items-center header-nav__list-item"><a href="">Офис</a></li>
+                </ul>
+            </nav>
+            <div class="col-sm-2 header-nav__item header-nav__button button batton_yellow">Акции</div>
+        </div>
+    </div>
 </header>
 <!--scripts-->
 <script src="js/app.js"></script>

@@ -15,7 +15,7 @@
 <header class="header">
     <nav class="header__wrapper">
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
                 <div class="col-sm-2 d-flex align-items-center justify-content-between header__item header__time">
                     Пн-Пт с <span class="font_bold">9:00</span> до <span class="font_bold">20:00</span>
                 </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="container-fluid header-nav">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-between">
             <div class="col-sm-2 header-nav__item header__logo">
                 <img src="../img/logo.png" alt="">
             </div>
@@ -68,13 +68,87 @@
                     <li class="d-flex align-items-center header-nav__list-item"><a href="">Офис</a></li>
                 </ul>
             </nav>
-            <div class="col-sm-2 header-nav__item header-nav__button button batton_yellow">Акции</div>
+            <button class="col-sm-2 header-nav__item header-nav__button button button_yellow">Акции</button>
         </div>
     </div>
 </header>
+<main class="main">
+    <div class="banner owl-carousel owl-theme">
+        <section class="banner-first">
+            <div class="container-fluid h-100">
+                <div class="row align-items-center h-100 banner__content">
+                    <div class="col-sm-1">
+                        <button class="slider-arrow slider-arrow_prev slider-arrow_white">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 1L1 10M1 10H18M1 10L10 19" stroke="#3E3F43" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 d-flex flex-column justify-content-center">
+                        <div class="banner__title font_bold">
+                            Пространство
+                            вашего&nbsp;комфорта
+                            от&nbsp;компании
+                            MGS&nbsp;MEBEL
+                        </div>
+                        <button class="button banner__button">Смотреть коллекции</button>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-1">
+                        <button class="slider-arrow slider-arrow_next slider-arrow_white">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19L18 10M18 10L0.999999 10M18 10L9 1" stroke="#3E3F43" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__overlay"></div>
+        </section>
+        <section class="banner-first">
+            <div class="container-fluid h-100">
+                <div class="row align-items-center h-100 banner__content">
+                    <div class="col-sm-1">
+                        <button class="slider-arrow slider-arrow_prev slider-arrow_white">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 1L1 10M1 10H18M1 10L10 19" stroke="#3E3F43" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 d-flex flex-column justify-content-center">
+                        <div class="banner__title font_bold">
+                            Пространство
+                            вашего&nbsp;комфорта
+                            от&nbsp;компании
+                            MGS&nbsp;MEBEL
+                        </div>
+                        <button class="button banner__button">Смотреть коллекции</button>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-1">
+                        <button class="slider-arrow slider-arrow_next slider-arrow_white">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19L18 10M18 10L0.999999 10M18 10L9 1" stroke="#3E3F43" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__overlay"></div>
+        </section>
+    </div>
+</main>
 <!--scripts-->
-<script src="js/app.js"></script>
 <script src="js/libs.min.js"></script>
+<script src="js/app.js"></script>
 <!--scripts END-->
 </body>
 </html>

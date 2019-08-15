@@ -16,6 +16,18 @@ img
   max-width: 100%
 a:hover
   text-decoration: none
+.button
+  height: 60px
+  background: $grey
+  font-size: $f-sm
+  color: #fff
+  font-family: 'MontserratBold', serif
+  border: 0
+  line-height: 17px
+  max-width: 270px
+  &_yellow
+    background: $yel
+    height: 40px
 
 .black
   color: #000
@@ -36,9 +48,21 @@ a:hover
 
 .container-fluid
   max-width: 1170px
+.slider-arrow
+  width: 56px
+  height: 56px
+  border-radius: 50%
+  background: $grey
+  transition: background .3s ease-in-out
+  border: 0
+  &_white
+    background: #fff
+  &:hover
+    background: $yel
 
 // header
 .header
+  margin-bottom: 40px
   &__wrapper
     background: $grey
     color: #fff
@@ -96,8 +120,11 @@ a:hover
     line-height: 17px
     text-align: center
     height: 50px
+    max-width: 170px
 .search
   margin: 50px auto 30px
+  form
+    padding-right: 0
   &__item
     width: 100%
     border: 1px solid $grey
@@ -117,7 +144,8 @@ a:hover
     height: 26px
 .header-nav
   margin-top: 30px
-  margin-bottom: 40px
+  &__items-wrapper
+    margin-left: -30px
   &__list-item
     position: relative
     &:before, &:last-child:after
@@ -128,22 +156,49 @@ a:hover
       display: block
       position: absolute
       top: 0
-      transition: height, background .5s ease-in-out
+      transition: height .3s ease-in-out
     &:last-child:after
       right: 0
-
     a
       color: $grey
       line-height: 28px
       font-size: $f-sm
       text-transform: uppercase
       padding: 0 30px
-      transition: text-shadow .5s
+      transition: text-shadow, color .3s ease-in-out
     &:hover a
       color: $yel
       text-shadow: 0 0 1px $yel, 0 0 1px $yel
     &:hover:before
       height: 58px
       background: $yel
-
+  &__button
+    max-width: 170px
 // header END
+
+//banner
+.banner-first
+  background: url("../img/banner-01.jpg") no-repeat
+.banner
+  height: 625px
+  margin-bottom: 55px
+  position: relative
+  &__content
+    position: relative
+    z-index: 2
+  &__title
+    font-size: 50px
+    line-height: 55px
+    text-transform: uppercase
+  &__button
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2)
+    margin-top: 60px
+  &__overlay
+    position: absolute
+    top: 0
+    width: 50%
+    left: 0
+    height: 100%
+    background: rgba(255, 255, 255, 0.5)
+    z-index: 1
+//banner END

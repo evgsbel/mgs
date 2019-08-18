@@ -65,8 +65,7 @@ a:hover {
   max-width: 100%;
   display: block; }
   .button_yellow {
-    background: #FBA54F;
-    height: 40px; }
+    background: #FBA54F; }
   .button_green {
     background: #B7D445;
     color: #3E3F43; }
@@ -294,7 +293,8 @@ a:hover {
       height: 58px;
       background: #FBA54F; }
   .header-nav__button {
-    max-width: 170px; }
+    max-width: 170px;
+    height: 40px; }
 
 .banner-first {
   background: url("../img/banner-01.jpg") no-repeat; }
@@ -428,23 +428,38 @@ a:hover {
     background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Cpath d='M9.1123 11C9.06409 11 9.01587 11 8.96766 11C7.42484 10.8087 5.88201 10.2826 4.58026 9.46957C3.37493 8.70435 2.31424 7.65217 1.54282 6.45652C0.674985 5.16522 0.14464 3.63478 0 2.10435C0 1.72174 0.0964264 1.33913 0.337493 1.05217C0.578559 0.765217 0.916051 0.573913 1.30176 0.526087C1.34997 0.526087 1.39818 0.526087 1.4464 0.526087H2.89279C3.61599 0.526087 4.24276 1.05217 4.33919 1.76957C4.3874 2.2 4.48383 2.63043 4.62847 3.01304C4.82132 3.53913 4.67668 4.11304 4.29098 4.54348L3.95349 4.87826C4.53204 5.73913 5.25524 6.50435 6.17129 7.07826L6.50879 6.74348C6.89449 6.36087 7.52126 6.21739 8.05161 6.4087C8.43731 6.55217 8.87123 6.64783 9.30515 6.69565C10.0284 6.7913 10.5587 7.41304 10.5587 8.13043V9.56522C10.5587 9.94783 10.4141 10.3304 10.1248 10.5696C9.8355 10.8087 9.49801 11 9.1123 11ZM2.89279 1.48261H1.4464C1.30176 1.48261 1.15712 1.57826 1.06069 1.67391C1.01248 1.76957 0.964265 1.86522 0.964265 2.0087C1.1089 3.39565 1.59104 4.73478 2.36245 5.93044C3.08565 7.03044 4.0017 7.98696 5.1106 8.65652C6.31593 9.42174 7.6659 9.9 9.06409 10.0435C9.25694 10.0435 9.35337 9.99565 9.44979 9.9C9.54622 9.80435 9.59443 9.7087 9.59443 9.56522V8.13043C9.59443 7.8913 9.40158 7.7 9.16051 7.65217C8.67838 7.60435 8.19625 7.46087 7.71412 7.26957C7.52126 7.22174 7.32841 7.22174 7.18377 7.36522L6.557 7.98696C6.41236 8.13043 6.17129 8.17826 5.97844 8.08261C4.67668 7.36522 3.61599 6.31304 2.89279 5.02174C2.84458 4.83043 2.89279 4.5913 3.03743 4.44783L3.66421 3.82609C3.76063 3.73043 3.80885 3.4913 3.76063 3.34783C3.56778 2.86957 3.47135 2.3913 3.37493 1.91304C3.37493 1.67391 3.13386 1.48261 2.89279 1.48261ZM8.63017 4.83043C8.3891 4.83043 8.19625 4.68696 8.14804 4.44783C8.0034 3.68261 7.37662 3.1087 6.60521 2.91739C6.36415 2.86957 6.17129 2.63043 6.21951 2.34348C6.26772 2.10435 6.50879 1.91304 6.79807 1.96087C7.95518 2.2 8.87123 3.06087 9.06409 4.2087C9.1123 4.44783 8.96766 4.73478 8.67838 4.78261C8.67838 4.78261 8.67838 4.83043 8.63017 4.83043ZM10.5587 4.78261C10.3176 4.78261 10.1248 4.5913 10.0766 4.35217C9.88371 2.58261 8.48553 1.19565 6.65343 0.956522C6.41236 0.908696 6.21951 0.669565 6.21951 0.430435C6.21951 0.191304 6.50879 0 6.74985 0C9.01587 0.23913 10.7516 1.96087 10.9926 4.2087C11.0408 4.44783 10.848 4.68696 10.5587 4.73478C10.6069 4.78261 10.5587 4.78261 10.5587 4.78261Z' fill='%233E3F43'%2F%3E %3C%2Fsvg%3E"); }
   .feedback_email:before {
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.6364 1.11111C1.33765 1.11111 1.09095 1.36238 1.09095 1.66667V8.33333C1.09095 8.63762 1.33765 8.88889 1.6364 8.88889H10.3636C10.6624 8.88889 10.9091 8.63762 10.9091 8.33333V1.66667C10.9091 1.36238 10.6624 1.11111 10.3636 1.11111H1.6364ZM4.68503e-05 1.66667C4.68503e-05 0.748731 0.735158 0 1.6364 0H10.3636C11.2648 0 12 0.748731 12 1.66667V8.33333C12 9.25127 11.2648 10 10.3636 10H1.6364C0.735158 10 4.68503e-05 9.25127 4.68503e-05 8.33333V1.66667Z' fill='%233E3F43'%2F%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.0986468 1.34808C0.271399 1.09672 0.611504 1.03559 0.858292 1.21154L6 4.87741L11.1417 1.21154C11.3885 1.03559 11.7286 1.09672 11.9014 1.34808C12.0741 1.59944 12.0141 1.94584 11.7673 2.1218L6.3128 6.01068C6.12499 6.14459 5.87501 6.14459 5.6872 6.01068L0.232702 2.1218C-0.0140867 1.94584 -0.0741052 1.59944 0.0986468 1.34808Z' fill='%233E3F43'%2F%3E %3C%2Fsvg%3E"); }
+  .feedback_text {
+    margin-top: 100px; }
+  .feedback_text:before {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.75451 0.170854C6.98232 -0.0569515 7.35167 -0.0569515 7.57947 0.170854L9.91281 2.50419C10.1406 2.73199 10.1406 3.10134 9.91281 3.32915L3.49614 9.74581C3.38674 9.85521 3.23837 9.91667 3.08366 9.91667H0.750326C0.428159 9.91667 0.166992 9.6555 0.166992 9.33333V7C0.166992 6.84529 0.22845 6.69692 0.337847 6.58752L6.75451 0.170854ZM1.33366 7.24162V8.75H2.84203L8.67537 2.91667L7.16699 1.40829L1.33366 7.24162Z' fill='%233E3F43'%2F%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.166992 12.25C0.166992 11.9278 0.428159 11.6667 0.750326 11.6667H11.2503C11.5725 11.6667 11.8337 11.9278 11.8337 12.25C11.8337 12.5722 11.5725 12.8333 11.2503 12.8333H0.750326C0.428159 12.8333 0.166992 12.5722 0.166992 12.25Z' fill='%233E3F43'%2F%3E %3C%2Fsvg%3E"); }
   .feedback__input {
     border: 0;
     border-bottom: 1px solid #3E3F43;
     font-size: 13px;
     padding-left: 50px;
     padding-bottom: 20px;
-    background: #F4F5F7; }
+    background: #F4F5F7;
+    width: 90%; }
     .feedback__input:focus {
       outline: none;
       border-bottom: 1px solid #3E3F43; }
+  .feedback__subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 115px; }
+    .feedback__subtitle span {
+      margin-bottom: 15px;
+      display: block; }
+  .feedback__product-submit {
+    margin: 45px auto 0; }
 
 .confidencial {
   margin-top: 50px;
   text-align: center; }
   .confidencial__label {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 22px;
     position: relative;
     padding-left: 35px; }
   .confidencial__checkbox {
@@ -742,3 +757,38 @@ a:hover {
 
 .interiors__img:hover .interiors__overlay {
   opacity: 1; }
+
+.product {
+  margin-bottom: 50px; }
+  .product__collection {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 27px;
+    background: #BCCE00;
+    height: 40px;
+    padding: 0 11px;
+    margin-bottom: 10px; }
+  .product__feature {
+    margin-bottom: 10px; }
+  .product__price {
+    margin-bottom: 20px; }
+    .product__price span {
+      font-size: 25px; }
+    .product__price .rub {
+      line-height: 13px;
+      width: 0.5em; }
+  .product__flap {
+    margin-bottom: 15px; }
+  .product__button {
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .product__button-want {
+    -webkit-box-shadow: 0 40px 50px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 40px 50px rgba(0, 0, 0, 0.25); }
+  .product__links {
+    margin-top: 20px; }
+  .product__link {
+    color: #3E3F43;
+    text-decoration: underline;
+    padding-left: 20px; }

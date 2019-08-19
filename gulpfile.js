@@ -44,6 +44,7 @@ gulp.task('scripts', function () {
     return gulp.src([
         //'app/libs/jquery/dist/jquery.min.js',
         'app/libs/bootstrap/dist/js/bootstrap.js',
+        'app/libs/bootstrap/js/dist/util.js',
         'app/libs/owl.carousel/dist/owl.carousel.js',
         'app/libs/jquery.maskedinput/dist/jquery.maskedinput.js'
     ])

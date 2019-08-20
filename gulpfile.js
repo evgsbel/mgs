@@ -42,10 +42,12 @@ gulp.task('code', function () {
 
 gulp.task('scripts', function () {
     return gulp.src([
-        //'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/jquery-3.3.1.min/index.js',
         'app/libs/bootstrap/dist/js/bootstrap.js',
         'app/libs/bootstrap/js/dist/util.js',
         'app/libs/owl.carousel/dist/owl.carousel.js',
+        'app/libs/nanoscroller/bin/javascripts/jquery.nanoscroller.js',
+        'app/libs/jquery.form-styler/dist/jquery.formstyler.js',
         'app/libs/jquery.maskedinput/dist/jquery.maskedinput.js'
     ])
         .pipe(concat('libs.min.js'))
@@ -59,6 +61,9 @@ gulp.task('css-libs', function () {
         'app/libs/bootstrap/dist/css/bootstrap.min.css',
         'app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
         'app/libs/owl.carousel/dist/assets/owl.theme.default.min.css',
+        'app/libs/nanoscroller/bin/css/nanoscroller.css',
+        'app/libs/jquery.form-styler/dist/jquery.formstyler.css',
+        'app/libs/jquery.form-styler/dist/jquery.formstyler.theme.css'
     ])// Выбираем файл для минификации
         .pipe(concat('libs.min.css'))
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass

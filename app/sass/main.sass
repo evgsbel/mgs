@@ -61,7 +61,7 @@ a:hover
 .black
   color: #000
 
-.font_bold
+.font_bold, b, strong
   font-family: 'MontserratBold', serif
 
 .font_medium
@@ -758,7 +758,7 @@ a:hover
 
 //interiors END
 
-//product
+//product info
 .product
   margin-bottom: 50px
   &__collection
@@ -792,7 +792,67 @@ a:hover
     color: $grey
     text-decoration: underline
     padding-left: 20px
-//product END
+//product info END
+
+// product-description tabs
+.product-description
+  margin-bottom: 100px
+  &__wrapper
+    background: #fff
+  &__nav
+    border-bottom: 0 !important
+  &__nav-item
+    margin: 0 !important
+    text-align: center
+    display: block
+    width: 20%
+  &__nav-link
+    color: #000 !important
+    background-color: #F4F5F7
+    border: 0 !important
+    display: block
+    width: 100%
+    padding: 0
+    line-height: 60px
+    transition: background-color .3s ease-in-out
+  &__nav-link.active, &__nav-link:hover
+    background-color: $yel !important
+    border: 0 !important
+    color: #000 !important
+  &__tab-content
+    padding: 45px 40px 40px 35px
+    ul
+      margin-bottom: 15px
+.inner-tabs
+  border-bottom: 0 !important
+  &__item
+    margin-right: 45px
+    display: block
+  &__link
+    border: 0 !important
+    color: $grey !important
+    text-transform: uppercase
+    font-family: 'MontserratBold', serif
+    padding: 0 !important
+    transition: color .3s ease-in-out
+  &__link.active, &__link:hover
+    color: $yel !important
+
+// scrollbar
+.nano
+  height: 480px
+  overflow: visible
+  .nano-content
+    padding: 45px 40px 40px 35px
+  .nano-pane
+    background: #fff
+    right: -30px
+    .nano-slider
+      background: $green
+      margin: 0
+// scrollbar END
+
+// product-description tabs END
 
 // filters
 .filters
@@ -823,5 +883,4 @@ a:hover
   position: relative
   span
     border: 5px solid red
-
 // filters END

@@ -73,7 +73,7 @@ a:hover {
 .black {
   color: #000; }
 
-.font_bold {
+.font_bold, b, strong {
   font-family: 'MontserratBold', serif; }
 
 .font_medium {
@@ -792,6 +792,66 @@ a:hover {
     color: #3E3F43;
     text-decoration: underline;
     padding-left: 20px; }
+
+.product-description {
+  margin-bottom: 100px; }
+  .product-description__wrapper {
+    background: #fff; }
+  .product-description__nav {
+    border-bottom: 0 !important; }
+  .product-description__nav-item {
+    margin: 0 !important;
+    text-align: center;
+    display: block;
+    width: 20%; }
+  .product-description__nav-link {
+    color: #000 !important;
+    background-color: #F4F5F7;
+    border: 0 !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    line-height: 60px;
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out; }
+  .product-description__nav-link.active, .product-description__nav-link:hover {
+    background-color: #FBA54F !important;
+    border: 0 !important;
+    color: #000 !important; }
+  .product-description__tab-content {
+    padding: 45px 40px 40px 35px; }
+    .product-description__tab-content ul {
+      margin-bottom: 15px; }
+
+.inner-tabs {
+  border-bottom: 0 !important; }
+  .inner-tabs__item {
+    margin-right: 45px;
+    display: block; }
+  .inner-tabs__link {
+    border: 0 !important;
+    color: #3E3F43 !important;
+    text-transform: uppercase;
+    font-family: 'MontserratBold', serif;
+    padding: 0 !important;
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out; }
+  .inner-tabs__link.active, .inner-tabs__link:hover {
+    color: #FBA54F !important; }
+
+.nano {
+  height: 480px;
+  overflow: visible; }
+  .nano .nano-content {
+    padding: 45px 40px 40px 35px; }
+  .nano .nano-pane {
+    background: #fff;
+    right: -30px; }
+    .nano .nano-pane .nano-slider {
+      background: #BCCE00;
+      margin: 0; }
 
 .filters {
   margin-bottom: 40px;

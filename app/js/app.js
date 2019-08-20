@@ -33,7 +33,7 @@ $('.product-slider').owlCarousel({
     nav: true,
     dots: false,
     center: true,
-    loop:true,
+    loop: true,
     navText: [arrow_prev, arrow_next],
     navClass: ["slider-arrow slider-arrow_prev", "slider-arrow slider-arrow_next"],
     navContainerClass: 'slider-arrow__wrapper',
@@ -55,3 +55,14 @@ $('.interiors__slider').owlCarousel({
 (function () {
     $('input[type="tel"]').mask('+7(999) 999-99-99');
 })();
+
+// scrollbar
+$(".nano").nanoScroller();
+
+// select
+
+(function ($) {
+    $(function () {
+        $('select').styler();
+    });
+})(jQuery);

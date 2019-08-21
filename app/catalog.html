@@ -282,48 +282,69 @@
 </section>
 <section class="filters">
     <div class="container-fluid">
-        <div class="title">Спальная</div>
-        <form>
-            <div class="form-row">
-                <div class="col-sm-3 filters__item">
-                    <label class="filters__label font_bold" for="price">Цена</label>
-                    <select class="custom-select select" id="price">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+        <div class="title row">Спальная</div>
+        <form class="row">
+            <div class="col-sm-3 filters__item">
+                <label class="filters__label font_bold" for="">Цена</label>
+                <div class="range">
+                    <div class="range__select range_js">
+                        <input type="text" id="amount" class="range__count">
+                    </div>
+                    <div class="range_hide range__wrapper">
+                        <div class="d-flex justify-content-between w-100 range__label">
+                            <span>от 15 000 Р</span><span>до 80 000 Р</span>
+                        </div>
+                        <div id="slider-range"></div>
+                    </div>
                 </div>
-                <div class="col-sm-3 filters__item">
-                    <label class="filters__label font_bold" for="collection">Коллекция</label>
-                    <select class="custom-select select" id="collection">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-sm-3 filters__item">
-                    <label class="filters__label font_bold" for="material">Материал</label>
-                    <select class="custom-select select" id="material">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-sm-3 filters__item filters__item_last">
-                    <label class="filters__label font_bold" for="sortby">Сортировать по</label>
-                    <select class="custom-select select" id="sortby">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
+<!--                <select class="filters__select" id="price">-->
+<!--                    <option selected>от 20 000 р до 100 000 р</option>-->
+<!--                    <input type="range">-->
+<!--                    <option value="1">One</option>-->
+<!--                    <option value="2">Two</option>-->
+<!--                    <option value="3">Three</option>-->
+<!--                </select>-->
+            </div>
+            <div class="col-sm-3 filters__item">
+                <label class="filters__label font_bold" for="collection">Коллекция</label>
+                <select class="filters__select" id="collection">
+                    <option selected>ADELTA STANDART</option>
+                    <option>Наименование коллеции 2</option>
+                    <option>Adelta standsrt</option>
+                    <option>Наименование коллеции 3</option>
+                    <option>ADELTA STANDART</option>
+                    <option>Наименование коллеции 4</option>
+                </select>
+            </div>
+            <div class="col-sm-3 filters__item">
+                <label class="filters__label font_bold" for="material">Материал</label>
+                <select class="filters__select" id="material">
+                    <option selected>ЛДСП</option>
+                    <option>LACOBEL</option>
+                    <option>Цветные зеркала</option>
+                    <option>ORACAL</option>
+                </select>
+            </div>
+            <div class="col-sm-3 filters__item filters__item_last">
+                <label class="filters__label font_bold" for="sortby">Сортировать по</label>
+                <select class=" select" id="sortby">
+                    <option selected>Cначало дешевые</option>
+                    <option value="1">Сначало дорогие</option>
+                    <option value="2">Имя</option>
+                    <option value="3">Материал</option>
+                    <option value="3">Цвет</option>
+                </select>
+            </div>
+            <div class="col-sm-1 filters__checkbox font_medium checkbox mr-5">
+                <input type="checkbox" class="checkbox__input custom-control-input input-checkbox" id="new">
+                <label class="checkbox__label custom-control-label filter__check-label" for="new">Новинка</label>
+            </div>
+
+            <div class="col-sm-1 filters__checkbox font_medium check checkbox">
+                <input type="checkbox" class="checkbox__input custom-control-input input-checkbox" id="akc">
+                <label class="checkbox__label custom-control-label filter__check-label" for="akc">Акция</label>
             </div>
         </form>
-    </div>
     </div>
 </section>
 <section class="best-deals">

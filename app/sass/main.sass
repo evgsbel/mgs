@@ -480,14 +480,14 @@ a:hover
 .confidencial
   margin-top: 50px
   text-align: center
-
+.checkbox
   &__label
     font-size: $f-sm
     line-height: 22px
     position: relative
     padding-left: 35px
 
-  &__checkbox
+  &__input
     position: absolute
     z-index: -1
     opacity: 0
@@ -502,19 +502,19 @@ a:hover
     border-radius: 0 !important
     content: ''
 
-  &__checkbox:focus
+  &__input:focus
     outline: none !important
     border: 0 !important
 
-  &__checkbox:checked ~ &__label:after
+  &__input:checked ~ &__label:after
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Cpath d='M1 5L4.66667 9L12 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%2F%3E %3C%2Fsvg%3E") !important
 
-  &__checkbox:checked ~ &__label:before
+  &__input:checked ~ &__label:before
     color: #fff
     background-color: #B7D445
     border-color: #B7D445
     outline: none
-  &__checkbox:focus ~ &__label:before
+  &__input:focus ~ &__label:before
     box-shadow: none
 // main-form END
 
@@ -859,28 +859,122 @@ a:hover
   margin-bottom: 40px
   border-bottom: 1px solid rgba(0,0,0,0.2)
   padding-bottom: 30px
+  &__item:first-child
+    margin-left: -15px
   &__label
     font-size: 13px
     margin-bottom: 10px
     padding-left: 20px
     color: $grey
     line-height: 16px
-  &__item
-    margin-right: 23px
-    max-width: 270px
     &_last
       margin-right: 0
-.select
-  background-color: #fff
-  height: 50px
-  padding-left: 20px
-  font-size: 13px
-  color: $grey
-  line-height: 16px
-  border: 0
-  background: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Ccircle cx='13' cy='13' r='13' fill='%23EAEBEF'%2F%3E %3Cpath d='M8 11L13 16L18 11' stroke='black'%2F%3E %3C%2Fsvg%3E") no-repeat 93% center #fff
-  cursor: pointer
+  &__checkbox
+    margin-top: 30px
+    margin-left: -15px
+.jq-selectbox
+  display: block
+  width: 100%
+  &:focus, &:active
+    outline: none
+    border: 0
+    box-shadow: none
+  &__select
+    height: 50px
+    color: $grey
+    border: 0
+    background: #fff url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Ccircle cx='13' cy='13' r='13' fill='%23EAEBEF'%2F%3E %3Cpath d='M8 11L13 16L18 11' stroke='black'%2F%3E %3C%2Fsvg%3E") no-repeat 95% center
+    cursor: pointer
+    position: relative
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+    padding: 0 0 0 20px
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25)
+    display: flex
+    justify-content: center
+    align-items: center
+    font: 13px/16px 'MontserratRegular', serif
+    text-shadow: none
+    &:hover
+      background: #fff url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Ccircle cx='13' cy='13' r='13' fill='%23EAEBEF'%2F%3E %3Cpath d='M8 11L13 16L18 11' stroke='black'%2F%3E %3C%2Fsvg%3E") no-repeat 95% center
+  &__trigger
+    display: none
+  &__dropdown
+    margin: 5px 0 0 0
+    box-sizing: border-box
+    width: 100%
+    padding: 15px 20px
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25)
+    border: 0
+    border-radius: 0
+    background: #fff
+    font: 13px/16px 'MontserratRegular', serif
+    li.selected, li:hover
+      color: $yel
+      background: #fff
+      font-family: 'MontserratBold', serif
+
+.range
   position: relative
-  span
-    border: 5px solid red
+  &__select
+    height: 50px
+    color: $grey
+    background: #fff url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E %3Ccircle cx='13' cy='13' r='13' fill='%23EAEBEF'%2F%3E %3Cpath d='M8 11L13 16L18 11' stroke='black'%2F%3E %3C%2Fsvg%3E") no-repeat 95% center
+    cursor: pointer
+    position: relative
+    padding: 0 0 0 20px
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25)
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    font: 13px/16px 'MontserratRegular', serif
+  &_hide
+    display: none
+  &__wrapper
+    background: #fff
+    position: absolute
+    width: 100%
+    z-index: 2
+    top: 55px
+    padding-bottom: 20px
+    padding-top: 15px
+    padding-left: 20px
+    padding-right: 20px
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25)
+  &__count
+    width: 80%
+    border: 0
+    background: #fff
+    color: $grey
+    font-size: 13px
+    cursor: pointer
+  &__label
+    font-size: 13px
+    color: $grey
+    padding-bottom: 12px
+
+.ui-widget-content
+  border: 0
+  margin-top: 10px
+  background: $grey
+  height: 3px
+.ui-slider .ui-slider-range
+  background: #C4C4C4
+  height: 3px
+.ui-state-default
+  width: 15px !important
+  height: 15px !important
+  background: $yel !important
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 0 !important
+  .ui-state-default:active
+    outline: none !important
+    border: 0
+    box-shadow: none
+.sliderNumber_2
+  background: $green !important
+
 // filters END

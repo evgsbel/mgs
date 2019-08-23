@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MGS - catalog</title>
+    <title>MGS - interior</title>
     <!--stylesheet-->
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -253,11 +253,7 @@
     </div>
     <div class="container-fluid header-nav">
         <div class="row align-items-center justify-content-between">
-<<<<<<< HEAD
-            <a href="" class="col-sm-2 header-nav__item header__logo">
-=======
             <a href="index.html" class="col-sm-2 header-nav__item header__logo">
->>>>>>> 9fd8823278e86757157ce5268704020a9333b35f
                 <img src="img/logo.png" alt="">
             </a>
             <nav class="col-sm-8 header-nav__items-wrapper">
@@ -284,354 +280,82 @@
         </ul>
     </div>
 </section>
-<section class="filters">
+<section class="interior">
     <div class="container-fluid">
-        <div class="title row">Спальная</div>
-        <form class="row">
-            <div class="col-sm-3 filters__item">
-                <label class="filters__label font_bold" for="">Цена</label>
-                <div class="range">
-                    <div class="range__select range_js">
-                        <input type="text" id="amount" class="range__count">
-                    </div>
-                    <div class="range_hide range__wrapper">
-                        <div class="d-flex justify-content-between w-100 range__label">
-                            <span>от 15 000 Р</span><span>до 80 000 Р</span>
+        <div class="title row">Спальня</div>
+        <div class="row">
+            <div class="col-sm-9 interior__wrapper">
+                <div class="mark" style="top:75%; left:25%;">
+                    <div class="mark__inner">
+                        <div class="mark__name">Кровать Adelta Standard <br> артикул 637</div>
+                        <div class="d-flex justify-content-between">
+                            <button class="button button_green mark__btn">Подробнее</button>
+                            <button class="button mark__btn">Где купить</button>
                         </div>
-                        <div id="slider-range"></div>
+                    </div>
+                </div>
+                <div class="mark" style="top:65%; left:50%;">
+                    <div class="mark__inner">
+                        <div class="mark__name">Комод Adelta Standard <br> артикул 637</div>
+                        <div class="d-flex justify-content-between">
+                            <button class="button button_green mark__btn">Подробнее</button>
+                            <button class="button mark__btn">Где купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mark" style="top:60%; left:80%;">
+                    <div class="mark__inner mark__inner_right">
+                        <div class="mark__name">Шкаф Adelta Standard <br> артикул 637</div>
+                        <div class="d-flex justify-content-between">
+                            <button class="button button_green mark__btn">Подробнее</button>
+                            <button class="button mark__btn">Где купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="interior__img" style="background-image:url(img/int-01.jpg)"></div>
+                <div class="d-flex justify-content-between">
+                    <button class="button interior__btn">Предыдущий</button>
+                    <button class="button button_green interior__btn">Следующий</button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="interior-slider">
+                    <div class="interior-slider__wrapper">
+                        <div class="interior-slider__item">
+                            <div class="interior-slider__img"><img src="img/bd-01.png" alt=""></div>
+                            <div class="interior-slider__price">23 000 <span class="rub">Р</span></div>
+                            <div class="interior-slider__name font_bold">Комод</div>
+                            <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interior-slider__wrapper">
+                        <div class="interior-slider__item">
+                            <div class="interior-slider__img"><img src="img/bd-02.png" alt=""></div>
+                            <div class="interior-slider__price">23 000 <span class="rub">Р</span></div>
+                            <div class="interior-slider__name font_bold">Комод</div>
+                            <div class="billet billet_orange d-flex justify-content-center align-items-center">new</div>
+                        </div>
+                    </div>
+                    <div class="interior-slider__wrapper">
+                        <div class="interior-slider__item">
+                            <div class="interior-slider__img"><img src="img/bd-03.png" alt=""></div>
+                            <div class="interior-slider__price">23 000 <span class="rub">Р</span></div>
+                            <div class="interior-slider__name font_bold">Комод</div>
+                            <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interior-slider__wrapper">
+                        <div class="interior-slider__item">
+                            <div class="interior-slider__img"><img src="img/bd-04.png" alt=""></div>
+                            <div class="interior-slider__price">23 000 <span class="rub">Р</span></div>
+                            <div class="interior-slider__name font_bold">Комод</div>
+                            <div class="billet billet_orange d-flex justify-content-center align-items-center">new</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 filters__item">
-                <label class="filters__label font_bold" for="collection">Коллекция</label>
-                <select class="filters__select" id="collection">
-                    <option selected>ADELTA STANDART</option>
-                    <option>Наименование коллеции 2</option>
-                    <option>Adelta standsrt</option>
-                    <option>Наименование коллеции 3</option>
-                    <option>ADELTA STANDART</option>
-                    <option>Наименование коллеции 4</option>
-                </select>
-            </div>
-            <div class="col-sm-3 filters__item">
-                <label class="filters__label font_bold" for="material">Материал</label>
-                <select class="filters__select" id="material">
-                    <option selected>ЛДСП</option>
-                    <option>LACOBEL</option>
-                    <option>Цветные зеркала</option>
-                    <option>ORACAL</option>
-                </select>
-            </div>
-            <div class="col-sm-3 filters__item filters__item_last">
-                <label class="filters__label font_bold" for="sortby">Сортировать по</label>
-                <select class=" select" id="sortby">
-                    <option selected>Cначало дешевые</option>
-                    <option value="1">Сначало дорогие</option>
-                    <option value="2">Имя</option>
-                    <option value="3">Материал</option>
-                    <option value="3">Цвет</option>
-                </select>
-            </div>
-            <div class="col-sm-1 filters__checkbox font_medium checkbox mr-5">
-                <input type="checkbox" class="checkbox__input custom-control-input input-checkbox" id="new">
-                <label class="checkbox__label custom-control-label filter__check-label" for="new">Новинка</label>
-            </div>
-
-            <div class="col-sm-1 filters__checkbox font_medium check checkbox">
-                <input type="checkbox" class="checkbox__input custom-control-input input-checkbox" id="akc">
-                <label class="checkbox__label custom-control-label filter__check-label" for="akc">Акция</label>
-            </div>
-        </form>
-    </div>
-</section>
-<section class="best-deals">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-01.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-02.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-03.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_orange d-flex justify-content-center align-items-center">new</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-04.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-01.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-02.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-03.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_orange d-flex justify-content-center align-items-center">new</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-04.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-01.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-02.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-03.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_orange d-flex justify-content-center align-items-center">new</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-04.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-01.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-02.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-03.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_orange d-flex justify-content-center align-items-center">new</div>
-                </div>
-            </div>
-            <div class="col-sm-3 best-deals__wrapper">
-                <div class="best-deals__item">
-                    <div class="best-deals__img"><img src="img/bd-04.png" alt=""></div>
-                    <div class="best-deals__price">23 000 <span class="rub">Р</span></div>
-                    <div class="best-deals__name font_bold">Комод</div>
-                    <div class="best-deals__feature">
-                        <ul>
-                            <li>Длина: 100</li>
-                            <li>Высота: 60</li>
-                            <li>Глубина: 30</li>
-                        </ul>
-                    </div>
-                    <div class="billet billet_green d-flex justify-content-center align-items-center">- 40%</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <button class="button best-deals__button">Показать еще</button>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="content">
-    <div class="container-fluid">
-        <div class="content__text">
-            <h2>Как компьютерный стол купить недорого?</h2>
-            <p>Цена на компьютерный стол — это важный фактор при выборе. На нее оказывают влияние различные
-                характеристики
-                изделий. Отказавшись от некоторых
-                особенностей Вы можете сэкономить. К примеру, выбрать модель с минимальным количеством выдвижных ящиков
-                или
-                отказаться от надстройки с полочками. Но
-                помните, что экономя можно отказаться от большой части функционала, который так важен при работе за
-                компьютером. При выборе компьютерного стола для
-                подростка категорически нельзя урезать бюджет на качество и экологичность материалов, надежность
-                фурнитуры.
-                Модели, представленные в нашем магазине, отличаются хорошим сочетанием цены, качества материалов и
-                дизайнерским внешним видом.
-                Мы можем предложить Вам доступные цены, так как изделия выпускаются крупными партиями. В результате
-                получается экономия за счет масштаба.</p>
-            <h3>Преимущества покупки компьютерного стола от «MGS Мебель»</h3>
-            <ul>
-                <li>Оригинальный внешний вид. Декор на фасадах разработан исходя из последних трендов мебельной
-                    индустрии. Фактически Вы покупаете дизайнерский стол по
-                    демократичной цене.
-                </li>
-                <li>Универсальность. Компьютерный стол может использоваться как письменный, а также как полноценная зона
-                    для творчества. Даже если ваш ребенок еще не
-                    посещает школу, за таким столом он сможет лепить фигуры из пластилина, рисовать, конструировать и
-                    др.
-                </li>
-                <li>За столом может учиться, работать как взрослый, так и ребенок.</li>
-                <li>Функциональность. Все столы выполнены с учетом потребностей современного ребенка или подростка.
-                    Большинство моделей оборудованы нишами, полками,
-                    выдвижными ящиками, надстройками. Конструкция обеспечивает правильную посадку во время работы за
-                    компьютером или ноутбуком.
-                </li>
-                <li>Оптимальные размеры. Разнообразие габаритов позволяет разместить мониторы с большой диагональю.</li>
-            </ul>
         </div>
     </div>
 </section>
@@ -751,7 +475,6 @@
     </div>
 </footer>
 <!--scripts-->
-
 <script src="js/libs.min.js"></script>
 <script src="js/app.js"></script>
 <!--scripts END-->

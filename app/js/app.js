@@ -40,7 +40,8 @@ $(document).ready(function () {
         navContainerClass: 'slider-arrow__wrapper',
         responsive:{
             0:{
-                items:1,
+                items:2,
+                center: false
             },
             768:{
                 items:3,
@@ -61,6 +62,17 @@ $(document).ready(function () {
         navText: [arrow_prev, arrow_next],
         navClass: ["slider-arrow slider-arrow_prev", "slider-arrow slider-arrow_next"],
         navContainerClass: 'slider-arrow__wrapper',
+        responsive:{
+            0:{
+                items:1,
+            },
+            480:{
+                items:2
+            },
+            768:{
+                items:3,
+            },
+        }
     });
 
 // слайдер карточка интерьера (вертикальный)

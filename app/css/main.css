@@ -875,8 +875,7 @@ a:hover {
     .filters__label_last {
       margin-right: 0; }
   .filters__checkbox {
-    margin-top: 30px;
-    margin-left: -15px; }
+    margin-top: 30px; }
 
 .jq-selectbox {
   display: block;
@@ -962,7 +961,7 @@ a:hover {
     background: #fff;
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 15;
     top: 55px;
     padding-bottom: 20px;
     padding-top: 15px;

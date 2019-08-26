@@ -214,14 +214,15 @@
 <header class="header">
     <nav class="header__wrapper">
         <div class="container-fluid">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-sm-2 d-flex align-items-center justify-content-between header__item header__time">
-                    Пн-Пт с <span class="font_bold">9:00</span> до <span class="font_bold">20:00</span>
+            <div class="row align-items-center justify-content-xl-between">
+                <div class="col-xl-2 col-lg-6 d-flex align-items-center justify-content-xl-between justify-content-lg-center header__item header__time">
+                    Пн-Пт с&nbsp;<span class="font_bold">&nbsp;9:00</span>&nbsp; до <span
+                        class="font_bold">&nbsp;20:00</span>
                 </div>
-                <div class="col-sm-4 d-flex align-items-center justify-content-around header__item header__adress">
-                    Москва Roomer, <span class="font_bold">работаем по всей Москве</span>
+                <div class="col-xl-4 col-lg-6 d-flex align-items-center justify-content-xl-around justify-content-lg-center header__item header__adress">
+                    Москва Roomer,&nbsp; <span class="font_bold">&nbsp;работаем по всей Москве</span>
                 </div>
-                <ul class="col-sm-4 d-flex justify-content-around align-items-center header__item header__top-nav">
+                <ul class="col-xl-4 col-lg-8 col-md-6 d-flex justify-content-around align-items-center header__item header__top-nav">
                     <li><a href="">Компания
                         <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L3 3L5 1" stroke="white"/>
@@ -238,7 +239,9 @@
                         </svg>
                     </a></li>
                 </ul>
-                <a href="" class="col-sm-2 header__help font_bold d-flex align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-4 d-xl-none"></div>
+                <a href=""
+                   class="col-xl-2 col-lg-2 col-md-2 header__help font_bold d-flex align-items-center justify-content-center">
                     Помощь
                 </a>
             </div>
@@ -253,11 +256,11 @@
         </div>
     </div>
     <div class="container-fluid header-nav">
-        <div class="row align-items-center justify-content-between">
-            <a href="index.html" class="col-sm-2 header-nav__item header__logo">
+        <div class="row align-items-center justify-content-xl-between justify-content-lg-center">
+            <a href="index.html" class="col-xl-2 col-lg-12 header-nav__item header__logo">
                 <img src="img/logo.png" alt="">
             </a>
-            <nav class="col-sm-8 header-nav__items-wrapper">
+            <nav class="col-xl-8 col-lg-9 col-md-12 header-nav__items-wrapper">
                 <ul class="d-flex justify-content-around">
                     <li class="d-flex align-items-center header-nav__list-item"><a href="category.html">Каталог</a></li>
                     <li class="d-flex align-items-center header-nav__list-item"><a href="catalog.html">Спальня</a></li>
@@ -268,10 +271,65 @@
                     <li class="d-flex align-items-center header-nav__list-item"><a href="">Офис</a></li>
                 </ul>
             </nav>
-            <button class="col-sm-2 header-nav__item header-nav__button button button_yellow">Акции</button>
+            <div class="col-lg-1 d-xl-none"></div>
+            <button class="col-xl-2 col-lg-2 col-md-12 header-nav__item header-nav__button button button_yellow">Акции
+            </button>
         </div>
     </div>
 </header>
+<section class="mobile-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="index.html" class="mobile-header__logo col-6"><img src="img/logo.png" alt=""></a>
+            <button class="button button_yellow mobile-header__button col-6 d-flex justify-content-center align-items-center">
+                <span class="mobile-header__button-title">Меню</span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+        <div class="mobile-header__hide">
+            <div class="mobile-header__wrapper">
+                <div class="mobile-header__close">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 357 357"
+                         style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                    <g id="close">
+                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3
+                            214.2,178.5"/>
+                    </g>
+                </svg>
+                </div>
+                <ul class="mobile-nav container">
+                    <li class="mobile-nav__item w-100"><a href="category.html">Каталог</a></li>
+                    <li class="mobile-nav__item w-100"><a href="catalog.html">Спальня</a></li>
+                    <li class="mobile-nav__item w-100"><a href="interiors.html">Гостинная</a>
+                    </li>
+                    <li class="mobile-nav__item w-100"><a href="product.html">Прихожая</a></li>
+                    <li class="mobile-nav__item w-100"><a href="interior.html">Кухни</a></li>
+                    <li class="mobile-nav__item w-100"><a href="">Офис</a></li>
+                </ul>
+                <ul class="mobile-subnav row">
+                    <li class="mobile-subnav__item w-100"><a href="">Компания</a></li>
+                    <li class="mobile-subnav__item w-100"><a href="">Каталоги</a></li>
+                    <li class="mobile-subnav__item w-100"><a href="">Контакты</a></li>
+                    <li class="mobile-subnav__item w-100"><a href="">Акции</a></li>
+                    <li class="mobile-subnav__item w-100"><a href="">Помощь</a></li>
+                </ul>
+                <div class="mobile-contacts row">
+                    <div class="mobile-contacts__item mobile-contacts_time">
+                        Пн-Пт с <span class="font_bold">9:00</span> до <span class="font_bold">20:00</span>
+                    </div>
+                    <div class="mobile-contacts__item mobile-contacts_adress">
+                        Москва Roomer, <span class="font_bold">работаем по всей Москве</span>
+                    </div>
+                    <form action="" method="post" class="col-sm-12 mobile__search">
+                        <input class="search__item" placeholder="Поиск" type="search">
+                        <input type="submit" value="" class="search__submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="breadcrumbs">
     <div class="container-fluid">
         <ul class="row breadcrumbs__wrapper">
@@ -363,7 +421,7 @@
 <footer class="footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-6">
                 <div class="footer__item">
                     <div class="footer__item-name font_bold">Коллекции</div>
                     <ul class="footer__list">
@@ -375,7 +433,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-6">
                 <div class="footer__item">
                     <div class="footer__item-name font_bold">Продукция</div>
                     <ul class="footer__list">
@@ -392,7 +450,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-6">
                 <div class="footer__item">
                     <div class="footer__item-name font_bold">Компания</div>
                     <ul class="footer__list">
@@ -406,7 +464,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-6">
                 <div class="footer__item">
                     <div class="footer__item-name font_bold">Сервис</div>
                     <ul class="footer__list">
@@ -417,16 +475,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="footer__phone">
+            <!--            <div class="col-md-2 d-lg-none d-xl-none"></div>-->
+            <div class="col-lg-4 col-xl-4 col-md-12 align-items-md-start footer__contacts">
+                <div class="footer__phone footer__contacts-item">
                     <div class="footer__item-name font_bold">Свяжитесь с нами</div>
                     <p>Телефон <span class="font_bold">8 800 000 00 00</span></p>
                 </div>
-                <div class="footer__adress">
+                <div class="footer__adress footer__contacts-item">
                     <div class="footer__item-name font_bold">Где купить</div>
                     <p>Мебельный центр <span class="font_bold">ROMER</span> <br>работаем по все Москве</p>
                 </div>
-                <div class="footer__whrite">
+                <div class="footer__whrite footer__contacts-item">
                     <div class="footer__item-name font_bold">Напишите нам</div>
                     <div class="social d-flex">
                         <a href="" class="social__item d-flex align-items-center justify-content-center">
@@ -461,15 +520,15 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-sm-2 footer__logo">
+            <div class="col-xl-2 col-lg-2 col-md-2 footer__logo">
                 <a href=""><img src="img/footer-logo.png" alt=""></a>
             </div>
-            <div class="col-sm-4 footer__copyright">
+            <div class="col-xl-4 col-lg-4 col-md-4 footer__copyright">
                 &copy; 2019 Мебель Все права защищены
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3">Сделано в студии Актиком</div>
-            <div class="col-sm-2 footer__akticom">
+            <div class="col-xl-1 col-lg-1 col-md-1"></div>
+            <div class="col-xl-3 col-lg-3 col-md-3">Сделано в студии Актиком</div>
+            <div class="col-xl-2 col-lg-2 col-md-2 footer__akticom">
                 <a href="https://akticom.ru" target="_blank"><img src="img/akticom-logo.png" alt=""></a>
             </div>
         </div>

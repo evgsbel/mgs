@@ -124,6 +124,13 @@ $(document).ready(function () {
         });
     });
 
-
+// мобильное меню
+    $('.mobile-header__button').on("click", function(e) {
+        e.preventDefault();
+        $('.mobile-header__hide').addClass('active');
+        $('.mobile-header__close').on("click", function() {
+            $('.mobile-header__hide').removeClass('active');
+        });
+    });
 
 });

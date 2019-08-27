@@ -133,4 +133,9 @@ $(document).ready(function () {
         });
     });
 
+    //скрытое меню footer
+    $('.footer__item-name').click(function () {
+       $(this).next('ul').toggle(300);
+    });
+
 });

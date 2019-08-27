@@ -719,6 +719,8 @@ a:hover {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 10px; }
+    .footer__item-name svg {
+      opacity: 0; }
   .footer__list li {
     margin: 10px 0; }
     .footer__list li a {

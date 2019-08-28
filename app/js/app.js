@@ -82,7 +82,28 @@ $(document).ready(function () {
             verticalSwiping: true,
             slidesToShow: 2,
             prevArrow: '<button type="button" role="presentation" class="slider-arrow slider-arrow_prev slick-arrow slick-arrow_prev"><svg width="19" height="20" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg"> <path d="M10 1L1 10M1 10H18M1 10L10 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></button>',
-            nextArrow: '<button type="button" role="presentation" class="slider-arrow slider-arrow_next slick-arrow slick-arrow_next"><svg width="19" height="20" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg"> <path d="M9 19L18 10M18 10L0.999999 10M18 10L9 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></button>'
+            nextArrow: '<button type="button" role="presentation" class="slider-arrow slider-arrow_next slick-arrow slick-arrow_next"><svg width="19" height="20" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg"> <path d="M9 19L18 10M18 10L0.999999 10M18 10L9 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></button>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        vertical: false,
+                        verticalSwiping: false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
     });
 
@@ -135,6 +156,7 @@ $(document).ready(function () {
 
     //скрытое меню footer
     $('.footer__item-name').click(function () {
+        $(this).toggleClass('active');
        $(this).next('ul').toggle(300);
     });
 

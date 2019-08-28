@@ -897,23 +897,34 @@ a:hover {
   .product-description__wrapper {
     background: #fff; }
   .product-description__nav {
-    border-bottom: 0 !important; }
+    border-bottom: 0 !important;
+    background-color: #F4F5F7; }
   .product-description__nav-item {
     margin: 0 !important;
     text-align: center;
-    display: block;
-    width: 20%; }
+    display: block; }
   .product-description__nav-link {
     color: #000 !important;
-    background-color: #F4F5F7;
     border: 0 !important;
     display: block;
     width: 100%;
     padding: 0;
-    line-height: 60px;
     -webkit-transition: background-color .3s ease-in-out;
     -o-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out; }
+    transition: background-color .3s ease-in-out;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .product-description__nav-link.active, .product-description__nav-link:hover {
     background-color: #FBA54F !important;
     border: 0 !important;
